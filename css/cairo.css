@@ -1,0 +1,521 @@
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }}
+    .parent {
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        height: calc(100vh - 35px);
+        background-color: #eee;
+        min-width: fit-content;
+        background-image: url(../images/Muizz_Street_-_Egypt.jpg);
+        background-size: cover;
+    }
+    
+    .header {
+      background-color: #F5C58F;
+      height: 35px;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: center;
+      font-size: x-large;
+      
+      color: #7e0119;
+      font-size: 29px;
+      
+    }
+
+        /* I derived the colors from the Egyptian flag */
+    
+
+    .rad1 {
+        width: 250px;
+        height: 250px;
+        background-color: #c194002e;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-bottom-right-radius: 250px;
+        transform-origin: left top;
+        transform: rotate(45deg);
+        }
+    
+    .rad2 {
+        width: 250px;
+        height: 250px;
+        background-color: #cf0921d4;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        border-bottom-left-radius: 250px;
+        transform-origin: right top;
+        transform: rotate(45deg);
+
+
+
+    }
+    .rad3 {
+        width: 250px;
+        height: 250px;
+        background-color: #000000d6;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        border-top-right-radius: 250px;
+        transform-origin: left bottom;
+        transform: rotate(45deg);
+   
+    }
+    .rad4 {
+        width: 250px;
+        height: 250px;
+        background-color: #ffffffbf;
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        border-top-left-radius: 250px;
+        transform-origin: right bottom;
+        transform: rotate(45deg);
+
+
+
+    }
+   
+    .container a {
+      
+      text-decoration: none;
+    }
+    
+
+    
+    .container .nc {
+      color: #000000c5;
+      position: absolute;
+      right: 46%;
+      bottom: 72%;
+      font-size: x-large;
+    }
+    .container .sc {
+      color: #000000c5;
+      position: absolute;
+      left: 46%;
+      top: 72%;
+      font-size: x-large;
+
+    }
+    .container .wc {
+      color: #000000c5;
+      position: absolute;
+      right: 56%;
+      top: 48%;
+      font-size: x-large;
+
+    }
+    .container .ec {
+      color: #cf0920d5;
+      position: absolute;
+      left: 56%;
+      bottom: 50%;
+      font-size: x-large;
+
+    }
+    .rad1:hover {
+      width: 300px;
+      height: 300px;
+      border-bottom-right-radius: 300px;
+      transition-duration: .65s;
+      
+      
+    }
+    .rad2:hover {
+      width: 300px;
+      height: 300px;
+      border-bottom-left-radius: 300px;
+      transition-duration: .65s;
+    }
+
+    .rad3:hover {
+      width: 300px;
+      height: 300px;
+      border-top-right-radius: 300px;
+      transition-duration: .65s;
+    }
+
+    .rad4:hover {
+      width: 300px;
+      height: 300px;
+      border-top-left-radius: 300px;
+      transition-duration: .65s;
+    }
+
+    .rad1:hover~.sc {
+      color: #000000;
+      font-size: 40px;
+      transition-duration: .65s;
+      left: 43%;
+      top: 70%;
+
+    }
+   
+
+    
+    .rad2:hover~.wc {
+      color: #000000;
+      font-size: 40px;
+      transition-duration: .65s;
+      right: 52%;
+      top: 45%;
+
+    }
+    .rad3:hover~.ec {
+      color: #cf0920;
+      font-size: 40px;
+      transition-duration: .65s;
+      left: 53%;
+      bottom: 47%;
+
+    }
+    .rad4:hover~.nc {
+      color: #000000;
+      font-size: 40px;
+      transition-duration: .65s;
+      right: 42%;
+      bottom: 75%;
+
+    }
+    .sc:hover {
+      color: #000000;
+      font-size: 40px;
+      transition-duration: .65s;
+      left: 43%;
+      top: 70%;
+
+    }
+    .wc:hover {
+      color: #000000;
+      font-size: 40px;
+      transition-duration: .65s;
+      right: 52%;
+      top: 45%;
+
+    }
+  
+  .ec:hover  {
+    color: #cf0920;
+    font-size: 40px;
+    transition-duration: .65s;
+    left: 53%;
+    bottom: 47%;
+
+  }
+  .nc:hover  {
+    color: #000000;
+    font-size: 40px;
+    transition-duration: .65s;
+    right: 42%;
+    bottom: 75%;
+
+  }
+.SouthCairo {
+  background-image: url(../images/1440px-Kairo_Ägyptisches_Museum_04.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: black;
+  display: flex;
+  font-size: larger;
+  
+  
+}
+.SouthCairo .container {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.WestCairo {
+  background-image: url(../images/Cairo_Nile_River.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: black;
+  display: flex;
+  font-size: larger;
+
+}
+.WestCairo .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.EastCairo {
+  background-image: url(../images/1280px-Cairo_University_after_sunset.jfif);
+  background-size: cover;
+  height: 100vh;
+  color: rgb(194, 0, 39);
+  display: flex;
+  font-size: larger;
+}
+.EastCairo .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.NorthCairo {
+  background-image: url(../images/View_of_the_Nile_from_Hilton.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: black;
+  display: flex;
+  font-size: larger;
+}
+.NorthCairo .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+p:hover {
+  padding-left: 20px;
+  font-size: xx-large;
+  transition-duration: .75s;
+}
+
+::selection {
+  background-color: black;
+  color: rgb(255, 166, 0);
+}
+
+@media (max-width: 800px) {
+  
+  .container {
+    width: 510px;
+  }
+  
+  
+  .header {
+    background-color: #F5C58F;
+    height: 35px;
+    width: 541px;
+  }
+  .header .container {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    color: #7e0119;
+    padding-top: 1%;
+    
+  }
+
+  .rad1 {
+        width: 100px;
+        height: 100px;
+        border-bottom-right-radius: 100px;
+  }
+  .rad2 {
+        width: 100px;
+        height: 100px;
+        border-bottom-left-radius: 100px;
+
+  }
+  .rad3 {
+        width: 100px;
+        height: 100px;
+        border-top-right-radius: 100px;
+
+  }
+  .rad4 {
+        width: 100px;
+        height: 100px;
+        border-top-left-radius: 100px;
+
+  }
+  .container .nc {
+    
+    position: absolute;
+    right: 43%;
+    bottom: 57%;
+    font-size: small;
+  }
+  .container .sc {
+    
+    position: absolute;
+    left: 43%;
+    top: 57%;
+    font-size: small;
+
+  }
+  .container .wc {
+    color: #000000c5;
+    position: absolute;
+    right: 56%;
+    top: 48%;
+    font-size: small;
+
+  }
+  .container .ec {
+    color: #cf0920d5;
+    position: absolute;
+    left: 56%;
+    bottom: 49%;
+    font-size: small;
+
+  }
+  .rad1:hover {
+    width: 145px;
+    height: 145px;
+    border-bottom-right-radius: 145px;
+    transition-duration: .65s;
+  }
+  .rad2:hover {
+    width: 145px;
+    height: 145px;
+    border-bottom-left-radius: 145px;
+    transition-duration: .65s;
+  }
+
+  .rad3:hover {
+    width: 145px;
+    height: 145px;
+    border-top-right-radius: 145px;
+    transition-duration: .65s;
+  }
+
+  .rad4:hover {
+    width: 145px;
+    height: 145px;
+    border-top-left-radius: 145px;
+    transition-duration: .65s;
+  }
+
+  .rad1:hover~.sc {
+    color: #000000;
+    font-size: 20px;
+    transition-duration: .65s;
+    left: 40%;
+    top: 60%;
+
+  }
+  .rad2:hover~.wc {
+    color: #000000;
+    font-size: 20px;
+    transition-duration: .65s;
+    right: 56%;
+    top: 48%;
+
+  }
+  .rad3:hover~.ec {
+    color: #cf0920;
+    font-size: 20px;
+    transition-duration: .65s;
+    left: 55%;
+    bottom: 48%;
+  }
+  .rad4:hover~.nc {
+    color: #000000;
+    font-size: 20px;
+    transition-duration: .65s;
+    right: 39%;
+    bottom: 60%;
+  }
+
+
+  .sc:hover {
+    color: #000000;
+    font-size: 20px;
+    transition-duration: .65s;
+    left: 40%;
+    top: 60%;
+
+
+  }
+  .wc:hover {
+    color: #000000;
+    font-size: 20px;
+    transition-duration: .65s;
+    right: 56%;
+    top: 48%;
+  }
+
+.ec:hover  {
+  color: #cf0920;
+  font-size: 20px;
+  transition-duration: .65s;
+  left: 55%;
+  bottom: 48%;
+
+}
+.nc:hover  {
+    color: #000000;
+    font-size: 20px;
+    transition-duration: .65s;
+    right: 39%;
+    bottom: 60%;
+}
+
+
+.SouthCairo  {
+  width: 541px;
+}
+.SouthCairo .container {
+  padding-left: 150px;
+}
+.WestCairo {
+  width: 541px
+}
+.WestCairo .container {
+  padding-left: 150px;
+}
+.EastCairo {
+  width: 541px
+}
+.EastCairo .container {
+  padding-left: 150px;
+}
+.NorthCairo {
+  width: 541px
+}
+.NorthCairo .container {
+  padding-left: 150px;
+}
+
+
+
+
+
+
+
+}
